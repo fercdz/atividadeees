@@ -1,0 +1,43 @@
+body {background-color: #eeeeee;
+    color: #333333;
+    font-family: "Sofia", sans-serif;
+    font-size: 18px;
+    margin: 20px;}
+h1, h2, p {text-align: center;}
+h1 {color: #111111;
+    font-size: 32px;
+    font-weight: bold;}
+#titulo {text-decoration-line: underline;}
+h2 {color: #8b0000;
+    font-size: 24px;}
+.introducao {background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #8b0000;}
+.historia {background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #111111;}
+.curiosidade {background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #8b0000;}
+ul {list-style-type: square;}
+ol {list-style-type: upper-roman;}
+.introducao p {text-align: justify;}
+nav a {color: #8b0000;
+    font-weight: bold;
+    text-decoration-line: none;}
+footer {margin: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #111111;}
+    img {width: 400px;
+    height: auto;}
