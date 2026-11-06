@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Loja do Teto - 30PRAUM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Sofia", sans-serif;
+            background-color: #121212;
+            color: #eeeeee;
+        } header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #000000;
+            border-bottom: 3px solid #f5c518;
+        }header h1 {
+            font-size: 28px;
+            color: #f5c518;
+        }nav ul {
+            display: flex;
+            list-style-type: none;
+        }nav li {
+            margin-left: 20px;
+        } nav a {
+            color: white;
+            text-decoration: none;
+        } nav a:hover {
+            color: #f5c518;
+        } main {
+            padding: 40px;
+        }.titulo-secao {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #f5c518;
+        } .subtitulo {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #bbbbbb;
+        } .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }.card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #1e1e1e;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            padding: 20px;
+            animation: aparecer 1s;
+        }.card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }.card h3 {
+            color: #f5c518;
+            margin-bottom: 5px;
+        }.artista {
+            font-size: 14px;
+            color: #bbbbbb;
+            margin-bottom: 10px;
+        }
+        .card p {
+            margin-bottom: 15px;
+        } .preco {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        } .etiqueta {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: #f5c518;
+            color: #000000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        } .card a {
+            background-color: #f5c518;
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        } .card:hover {
+            background-color: #2a2a2a;
+            transform: scale(1.05);
+            border-color: #f5c518;
+        } @keyframes aparecer {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;}
+} footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            border-top: 3px solid #f5c518;
+            color: #bbbbbb;
+        }
+        @media (max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja do Teto</h1>
+        <nav>
+            <ul><li><a href="#musicas">Músicas</a></li>
+                <li><a href="#rodape">Contato</a></li>
+                <li><a href="https://unifil.br/" target="_blank">UniFil</a></li></ul>
+        </nav>
+    </header>
+    <main>
+        <section id="musicas">
+            <h2 class="titulo-secao">Sons da 30PRAUM</h2>
+            <p class="subtitulo">Escolha sua música favorita!</p>
+            <div class="cards">
+                <article class="card">
+                    <span class="etiqueta">Hit</span>
+                    <img src="imagens/m4.jpg" alt="Capa da música M4">
+                    <h3>M4</h3>
+                    <p class="artista">Teto e Matuê</p>
+                    <p>Um dos sons que fizeram o Teto ficar conhecido no trap brasileiro.</p>
+                    <p class="preco">R$ 4500,90</p>
+                    <a href="#">Comprar</a>
+                </article>
+                <article class="card">
+                    <img src="imagens/play.jpg" alt="Capa da música Manha">
+                    <h3>Manha</h3>
+                    <p class="artista">Teto</p>
+                    <p>Som com a cara do Teto, perfeito para ouvir no fone.</p>
+                    <p class="preco">R$ 1700,90</p>
+                    <a href="#">Comprar</a>
+                </article>
+                <article class="card">
+                    <img src="imagens/mveuf.jpg" alt="Capa da música Minha Vida É Um Filme">
+                    <h3>Minha Vida É Um Filme</h3>
+                    <p class="artista">Teto</p>
+                    <p>Uma faixa cheia de atitude para colocar na sua playlist.</p>
+                    <p class="preco">R$ 670,90</p>
+                    <a href="#">Comprar</a>
+                </article>
+                <article class="card">
+                    <img src="imagens/mp.jpg" alt="Capa da música Mustang Preto">
+                    <h3>Mustang Preto</h3>
+                    <p class="artista">Teto</p>
+                    <p>Batida forte e estilo trap para animar qualquer momento.</p>
+                    <p class="preco">R$ 990,90</p>
+                    <a href="#">Comprar</a>
+                </article>
+                <article class="card">
+                    <img src="imagens/Capa_do_álbum_Máquina_do_Tempo.jpg" alt="Capa da música Maquina do tempo">
+                    <h3>Maquina do tempo</h3>
+                    <p class="artista">Matuê</p>
+                    <p>Mais uma faixa do Teto na 30PRAUM para os fãs do selo.</p>
+                    <p class="preco">R$ 880,90</p>
+                    <a href="#">Comprar</a>
+                </article>
+                <article class="card">
+                    <span class="etiqueta">Hit</span>
+                    <img src="imagens/vampiro.jpg" alt="Capa da música Vampiro">
+                    <h3>Vampiro</h3>
+                    <p class="artista">Matuê, Teto e WIU</p>
+                    <p>A união dos três artistas da 30PRAUM em uma só faixa.</p>
+                    <p class="preco">R$ 999,90</p>
+                    <a href="#">Comprar</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <p>&copy; 2026 Loja do Teto - Atividade 3</p>
+    </footer>
+</body>
+</html>
